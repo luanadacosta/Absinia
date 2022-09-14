@@ -13,9 +13,9 @@ body{
 #container{
     max-width: 1300px;
     width: 100%;
-    background-color: #e9e9e9;
+    background-color: #ffffff;
     margin: 0 auto;
-    padding: 0 15px;
+  
 
     
 }
@@ -29,27 +29,36 @@ body{
 
 .header{
     width: 100%;
-    height: 135px;
+    height: 100px;
     background: #a633c9;
     display: grid;
-    padding: 20px;
+    padding: 0;
+    margin: aut;
     /*1fr fração e colunas iguais*/
     grid-template-columns: 1fr 2fr 1fr 1fr;
     gap: 10px;
-    
-    align-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.img{
+    display: flex;
+    width: 100%;
 }
 
 .item{
     color: rgb(9, 126, 34);
     padding: 10px;
-    
 }
 
 .imagem{
-    width: 100px;
-    padding: 2px;
+    
+    width: 50%;
+  
 }
+
+
 
 .pesquisar{
     width: 100%;
@@ -63,16 +72,24 @@ body{
 
 .navbar{
     width: 100%;
-    background-color: #fff;
     display: grid;
     /*repeat= repete varias vezes a mesma medida, 7colunas com a mesma medida*/
     grid-template-columns: repeat(7,auto);
-    padding: 10px;
+    padding: 20px;
 }
 
 .texto-navbar{
-    color: #158526;
+    color: #f8f8f8;
     text-decoration: none;
+    background-color: #158526;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5px 7.5px;
+    padding: 10px;
+    transition: linear;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
 }
 
 
@@ -88,13 +105,6 @@ body{
     color: #21a81a;
 }
 
-.banner{
-    width: 100%;
-}
-
-.banner-img{
-    width: 100%;
-}
 
 .categorias{
     display: grid;
@@ -117,19 +127,15 @@ body{
     font-size: 25px;
     line-height: 41px;
     /* identical to box height */
-    color: #21a81a;
+    color: #44071e;
     text-align: center;
 }
 
-.promocoes-figure{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 50px;
-    width: 100%;
-}
+
 
 .promocoes-img{
     width: 100%;
+   
     
 }
 
@@ -138,18 +144,23 @@ body{
 .carousel__slide{
     /*define que  a largura maxima de cada item do carousel vai ser de 40% o padrão é 60%*/
     max-width: var(--carousel-slide-width, 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 63px;
 }
 
 .banner2{
-    margin-top:40px ;
+    margin-top:30px;
 }
 
 .banner2-img{
-    width: 100%;
+    width: 32%;
 }
 
 .rodape{
-    background-color: #000;
+    background-color: #f7f3f8;
     display: grid;
     grid-template-columns: repeat(4,1fr);
 
@@ -163,14 +174,15 @@ body{
 }
 
 .rodape-titulo{
-
+color: rgb(85, 33, 33);
+;
 }
 
 .rodape-texto{
     font-weight: normal;
     font-size: 13px;
     text-decoration: none;
-    color: #ccc;
+    color: rgb(85, 33, 33);
 }
 /*final da versao desktop*/
 
@@ -202,7 +214,12 @@ body{
     }
 
     .item-navbar{
-        padding: 10px;
+        padding: 15px;
+        background-color: #158526;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5px 7.5px;
     }
 
     .categorias{
