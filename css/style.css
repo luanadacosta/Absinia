@@ -13,17 +13,15 @@ body{
 #container{
     max-width: 1300px;
     width: 100%;
-    background-color: #ffffff;
     margin: 0 auto;
+    padding: 0 auto;
+    
   
 
     
 }
 
-#container-interno{
-    width: 100%;
-    padding: 0 20px;
-}
+
 
 
 
@@ -148,11 +146,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 63px;
+    margin-top: 10px;
 }
 
 .banner2{
-    margin-top:30px;
+    margin-top:0 auto;
 }
 
 .banner2-img{
