@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absinia Artes</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <!--link font awesome para funcionais icones do font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -22,11 +19,12 @@
     <div id="container">
         <header class="header">
             <div class="item">
-            <img class="imagem" src="img/logo.png" alt="">
-        </div>
+                <img class="imagem" src="img/logo.png" alt="">
+            </div>
 
             <div class="item">
                 <input class="pesquisar" type="text" name="pesquisar" id="pesquisar" placeholder="O que você procura?">
+                <button class="lupa" type="button"><i class="fa fa-search"></i></button>
             </div>
             <div class="item ">
                 <a class="texto-menu" href="">Login</a>
@@ -38,10 +36,11 @@
         </header>
         <!--fim topo-->
 
-        
+
 
         <!--itens do menu-->
         <div id="container-interno">
+
             <!--pai navbar-->
             <nav class="navbar">
                 <div class="item-navbar">
@@ -68,130 +67,199 @@
                     <a class="texto-navbar" href="">Peças de Reposição</a>
                 </div>
             </nav>
+            </div>
             <!--fim itens menu-->
 
             <!--conteudo pricipal main-->
             <main>
-                <h1 class="texto-pricipal">Os melhores produtos com os melhores preços</h1>
+                <img class="slid-img" src="img/banner.png">
+
                 <!--carrosel-->
                 <div class="promocoes">
-                    <p class="promocoes-titulo">Promoções da Semana</p>
+                    <p class="promocoes-titulo">Os mais pedidos</p>
+                                            
+                    <div id="myCarousel" class="carousel">
 
+                        <div class="carousel__slide">
+                            <figure class="promocoes-figure">
+                                <img class="promocoes-img" src="img/brinco_pedra.jpg" alt="">
+                                <figcaption>
+                                    <p>Brinco Pedra: R$ 79.90</p>
+                                    <p></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <figure class="promocoes-figure">
+                                <img class="promocoes-img" src="img/colar_pedra.jpg" alt="">
+                                <figcaption>
+                                    <p>Colar Pedra Roxa: R$ 290.00</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <figure class="promocoes-figure">
+                                <img class="promocoes-img" src="img/pulseira_m.jpg" alt="">
+                                <figcaption>
+                                    <p>Pulseira: R$ 60.00 </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <figure class="promocoes-figure">
+                                <img class="promocoes-img" src="img/aneis.jpg" alt="">
+                                <figcaption>
+                                    <p>Aneis pedras: R$ 39.99</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <figure class="promocoes-figure">
+                                <img class="promocoes-img" src="img/colar_pedra1.jpg" alt="">
+                                <figcaption>
+                                    <p>Colar Verde: 39,99</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+
+                        <div class="carousel__slide">
+                            <figure class="promocoes-figure">
+                                <img class="promocoes-img" src="img/colar_pedra2.jpg" alt="">
+                                <figcaption>
+                                    <p>Colar Azul: 49,99</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="promocoes">
+                    <p class="promocoes-titulo">Novidades</p>
+                                            
                     <div id="myCarousel" class="carousel">
                         <div class="carousel__slide">
                             <figure class="promocoes-figure">
-                                <img class="promocoes-img"src="img/brinco_pedra.jpg" alt="">
+                                <img class="promocoes-img" src="img/brinco_pedra.jpg" alt="">
                                 <figcaption>
-                                   <p>Brinco Pedra:  R$ 79.90</p>
-                                   <p></p></figcaption>
+                                    <p>Brinco Pedra: R$ 79.90</p>
+                                    <p></p>
+                                </figcaption>
                             </figure>
                         </div>
 
                         <div class="carousel__slide">
                             <figure class="promocoes-figure">
-                            <img class="promocoes-img"src="img/colar_pedra.jpg" alt="">
-                            <figcaption>
-                                <p>Colar Pedra Roxa:  R$ 290.00</p></figcaption>
+                                <img class="promocoes-img" src="img/colar_pedra.jpg" alt="">
+                                <figcaption>
+                                    <p>Colar Pedra Roxa: R$ 290.00</p>
+                                </figcaption>
                             </figure>
                         </div>
 
                         <div class="carousel__slide">
                             <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/pulseira_m.jpg" alt="">
-                            <figcaption>
-                                <p>Pulseira:  R$ 60.00 </p></figcaption>
+                                <img class="promocoes-img" src="img/pulseira_m.jpg" alt="">
+                                <figcaption>
+                                    <p>Pulseira: R$ 60.00 </p>
+                                </figcaption>
                             </figure>
                         </div>
 
                         <div class="carousel__slide">
                             <figure class="promocoes-figure">
-                            <img class="promocoes-img"src="img/aneis.jpg" alt="">
-                            <figcaption>
-                                <p>Aneis pedras: R$ 39.99</p></figcaption>
+                                <img class="promocoes-img" src="img/aneis.jpg" alt="">
+                                <figcaption>
+                                    <p>Aneis pedras: R$ 39.99</p>
+                                </figcaption>
                             </figure>
                         </div>
 
                         <div class="carousel__slide">
                             <figure class="promocoes-figure">
-                            <img class="promocoes-img"src="img/colar_pedra1.jpg" alt="">
-                            <figcaption>
-                                <p>Colar Verde: 39,99</p></figcaption>
+                                <img class="promocoes-img" src="img/colar_pedra1.jpg" alt="">
+                                <figcaption>
+                                    <p>Colar Verde: 39,99</p>
+                                </figcaption>
                             </figure>
                         </div>
+                        
 
                         <div class="carousel__slide">
                             <figure class="promocoes-figure">
-                            <img class="promocoes-img"src="img/colar_pedra2.jpg" alt="">
-                            <figcaption>
-                                <p>Colar Azul: 49,99</p></figcaption>
+                                <img class="promocoes-img" src="img/colar_pedra2.jpg" alt="">
+                                <figcaption>
+                                    <p>Colar Azul: 49,99</p>
+                                </figcaption>
                             </figure>
                         </div>
-
-                      </div>
-                </div>
-                
-                <h1 class="promocoes-titulo">Novidades</h1>
-                <div class="banner2">
-                    <img class="banner2-img" src="img/cabeça.jpg" alt="">
-                    <img class="banner2-img" src="img/casco.jpg" alt="">
-                    <img class="banner2-img" src="img/facao.jpg" alt="">
+                    </div>
                 </div>
             </main>
-    </div><!--fim do container interno-->
-            <footer class="rodape">
-                    <div class="rodape-item">
-                        <p class="rodape-titulo">INSTITUCIONAL</p>
-                        <a class="rodape-texto" href="">
-                            <p>Sobre Abssinia</p>
-                        </a>
-                        <a class="rodape-texto" href="">
-                            Atendimento</p>
-                        </a>
+    </div>
+    <!--fim do container interno-->
+    <footer class="rodape">
+        <div class="rodape-item">
+            <p class="rodape-titulo">INSTITUCIONAL</p>
+            <a class="rodape-texto" href="">
+                <p>Sobre Abssinia</p>
+            </a>
 
-                    </div>
+            <a class="rodape-texto" href="">
+                Atendimento</p>
+            </a>
+        </div>
 
-                    <div class="rodape-item">
-                        <P class="rodape-titulo">TIRE SUAS DUVIDAS</p>
+        <div class="rodape-item">
+            <P class="rodape-titulo">TIRE SUAS DUVIDAS</p>
 
-                        <a class="rodape-texto" href="">
-                            <p>Formas de Pagamentos</p>
-                        </a> 
+            <a class="rodape-texto" href="">
+                <p>Formas de Pagamentos</p>
+            </a>
 
-                        <a class="rodape-texto" href="">
-                            <p>Entregas e Prazos</p>
-                        </a>
+            <a class="rodape-texto" href="">
+                <p>Entregas e Prazos</p>
+            </a>
 
-                        <a class="rodape-texto" href="">
-                            <p>Trocas e Devoluções</p>
-                        </a>
-                    </div>
+            <a class="rodape-texto" href="">
+                <p>Trocas e Devoluções</p>
+            </a>
+        </div>
 
-                    <div class="rodape-item">
-                        <P class="rodape-titulo">ATENDIMENTO</p>
-                    
+        <div class="rodape-item">
+            <P class="rodape-titulo">ATENDIMENTO</p>
 
-                        <a class="rodape-texto" href="">
-                            <p>Whatsapp: (19)99985-8617</p>
-                        </a> 
-                    </div>
 
-                    <div class="rodape-item">
-                        <P class="rodape-titulo">SIGA NOSSAS REDES SOCIAIS</p>
+            <a class="rodape-texto" href="">
+                <p>Whatsapp: (19)99985-8617</p>
+            </a>
+        </div>
 
-                        <a class="rodape-texto" href="">
-                            <p>Facebook: Abissinia Artes</p>
-                        </a>
+        <div class="rodape-item">
+            <P class="rodape-titulo">SIGA NOSSAS REDES SOCIAIS</p>
 
-                        <a class="rodape-texto" href="">
-                           <p>Instagram:@Abissiniaartes</p>
-                        </a>
+            <a class="rodape-texto" href="">
+                <p>Facebook: Abissinia Artes</p>
+            </a>
 
-                    </div>
-            </footer>
+            <a class="rodape-texto" href="">
+                <p>Instagram:@Abissiniaartes</p>
+            </a>
 
-       
-    </div><!--Importação do Fancy-->
+        </div>
+    </footer>
+
+
+    </div>
+    <!--Importação do Fancy-->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://kit.fontawesome.com/de12576d65.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
