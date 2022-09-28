@@ -140,6 +140,7 @@ body{
 
 .promocoes-img{
     width: 70%;
+    display: grid;
 }
 
 
@@ -230,9 +231,5 @@ color: rgb(64, 6, 97);
     .rodape{
         grid-template-columns: 1fr;
     }
-
-    
-
-
 
 }
