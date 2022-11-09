@@ -37,35 +37,65 @@ body{
 
 .item{
     color: rgb(9, 126, 34);
-    padding: 10px;
+   
 }
 
-.lupa{
-    width: 10%;
-    float: right;
-    padding: 6px 10px;
-    background: rgb(254, 254, 254);
-    font-size: 16px;
-    border: none;
+.div-lupa{
+    display: flex;
+}
+
+.input-lupa{
+    width: 100%;
+    border: #f8f8f8;
+    background-color: #FFF;
+    border-radius: 8px 0px 0px 4px !important;
+    border-right: 0 !important;
+}
+
+.btn-lupa{
+    padding: 6px 7px;
+    background-color: #FFF;
     cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 0px 4px 4px 0px;
 }
   
-.lupa:hover{
-    background: #ccc;
+.btn-lupa:hover{
+    background: rgb(243, 237, 237);
+
 }
 
 .imagem{
-    width: 50%;
+    width: 60%;
 }
 
 .pesquisar{
     width: 90%;
     padding: 6px 10px;
+    margin-top: 0px;
+
+
 }
 
 .texto-menu{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    margin-top: 0;
+   
+   
+
+}
+
+.btn-login{
+    width: 60px;
+    margin-left: 80px;
+    background-color: #a633c9;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.btn-login :hover{
+    color: #ffffff;
 }
 
 .navbar{
@@ -78,7 +108,6 @@ body{
 
 
 .texto-navbar{
-
     color: #f8f8f8;
     text-decoration: none;
     display: flex;
@@ -118,8 +147,6 @@ body{
     text-align: center;
 }
 
-
-
 .promocoes-img{
     width: 100%;
     padding: 0px;
@@ -127,12 +154,24 @@ body{
 
 /*altera o tamanho padrao de cada item do corosel*/
 
-
 .carousel__slide{
- width: 30%;
- padding: 0;
+    width: 30%;
+    padding: 0;
+    
 }
 
+.btn-comprar{
+    width: 30%;
+    padding: 6px;
+    color: #ffffff;
+    background-color: #19962c;
+    border: #0d5e19;
+    border-radius: 10px;
+}
+
+.btn-comprar:hover{
+    background-color: #21a81a;
+}
 
 
 .rodape{
@@ -140,6 +179,11 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 
+}
+
+.social{
+    width: 10%;
+    margin: 1px;
 }
 
 .rodape-item{
