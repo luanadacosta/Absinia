@@ -11,7 +11,6 @@ body{
 }
 
 #container{
-    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
      
@@ -29,45 +28,74 @@ body{
     justify-content: space-between;
 }
 
-.img{
-    display: flex;
+.slid-img{
     width: 100%;
+    height: 100%;
 }
 
 
 
 .item{
     color: rgb(9, 126, 34);
-    padding: 10px;
+   
 }
 
-.lupa{
-    width: 10%;
-    float: right;
-    padding: 6px 10px;
-    background: rgb(254, 254, 254);
-    font-size: 16px;
-    border: none;
+.div-lupa{
+    display: flex;
+}
+
+.input-lupa{
+    width: 100%;
+    border: #f8f8f8;
+    background-color: #FFF;
+    border-radius: 8px 0px 0px 4px !important;
+    border-right: 0 !important;
+}
+
+.btn-lupa{
+    padding: 6px 7px;
+    background-color: #FFF;
     cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 0px 4px 4px 0px;
 }
   
-.lupa:hover{
-    background: #ccc;
+.btn-lupa:hover{
+    background: rgb(243, 237, 237);
+
 }
 
 .imagem{
-    width: 50%;
-  
+    width: 60%;
 }
 
 .pesquisar{
     width: 90%;
     padding: 6px 10px;
+    margin-top: 0px;
+
+
 }
 
 .texto-menu{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    margin-top: 0;
+   
+   
+
+}
+
+.btn-login{
+    width: 60px;
+    margin-left: 80px;
+    background-color: #a633c9;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.btn-login :hover{
+    color: #ffffff;
 }
 
 .navbar{
@@ -80,7 +108,6 @@ body{
 
 
 .texto-navbar{
-
     color: #f8f8f8;
     text-decoration: none;
     display: flex;
@@ -109,23 +136,6 @@ body{
     color: #21a81a;
 }
 
-
-.categorias{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  
-}
-
-.categorias-img{
-    width: 100%;
-    height: 272px;
-}
-
-.promocoes{
-    margin-top: 40px;
-    
-}
-
 .promocoes-titulo{
     font-family: 'Roboto';
     font-style: normal;
@@ -137,29 +147,34 @@ body{
     text-align: center;
 }
 
-
-
 .promocoes-img{
-    width: 70%;
-    display: grid;
+    width: 100%;
+    padding: 0px;
 }
 
-
+.promocoes{
+    margin-top: 40px;
+}
 
 /*altera o tamanho padrao de cada item do corosel*/
 
 .carousel__slide{
-    /*define que  a largura maxima de cada item do carousel vai ser de 40% o padrão é 60%*/
-    max-width: var(--carousel-slide-width, 40%);
+    width: 30%;
+    padding: 0;
     display: flex;
 }
 
-.slide-img{
-        width: 100%;
-        display: grid;
-        padding: 10px;
-    }
+.btn-comprar{
+    padding: 6px;
+    color: #ffffff;
+    background-color: #19962c;
+    border: #0d5e19;
+    border-radius: 10px;
+}
 
+.btn-comprar:hover{
+    background-color: #21a81a;
+}
 
 
 .rodape{
@@ -167,6 +182,11 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 
+}
+
+.social{
+    width: 10%;
+    margin: 1px;
 }
 
 .rodape-item{
@@ -190,47 +210,3 @@ color: rgb(64, 6, 97);
 /*final da versao desktop*/
 
 
-/*inicio da versao mobile*/
-@media only screen and (max-width: 768px){
-    #container{
-        width: 100%;
-
-    }
-
-    .header{
-        grid-template-columns: 1fr;
-        height: auto;
-        text-align: center;
-    }
-    
-    #pesquisar{
-        width: 100%;
-        padding: 15px;
-    }
-
-    .item{
-        padding: 5px;
-    }
-
-    .navbar{
-        grid-template-columns: 1fr;
-    }
-
-    .item-navbar{
-        padding: 15px;
-        background-color: #158526;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1.5px 7.5px;
-    }
-
-    .categorias{
-        grid-template-columns: 1fr;
-    }
-
-    .rodape{
-        grid-template-columns: 1fr;
-    }
-
-}

@@ -1,3 +1,5 @@
+
+
 /*carrocel das imagens(rolagem) */
 const carouselDestaque = new Carousel(document.querySelector("#carousel-destaque"), {
   // Your options go here
@@ -17,4 +19,3 @@ const carouselBrincos = new Carousel(document.querySelector("#carousel-brincos")
 const carouselPulseiras = new Carousel(document.querySelector("#carousel-pulseiras"), {
   // Your options go here
 });
-

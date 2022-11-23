@@ -1,3 +1,8 @@
+<?php
+    include('includes/carrinho.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,15 +24,19 @@
     <div id="container">
         <header class="header">
             <div class="item">
-                <img class="imagem" src="img/logo.png" alt="">
+                <img class="imagem" src="img/logo3.png" alt="">
             </div>
 
-            <div class="item">
-                <input class="pesquisar" type="text" name="pesquisar" id="pesquisar" placeholder="O que você procura?">
-                <button class="lupa" type="button"><i class="fa fa-search"></i></button>
+            <div class="pesquisar">
+                <div class="div-lupa">
+                    <input class="input-lupa" type="text" name="pesquisar" id="pesquisar"
+                        placeholder="O que você procura?">
+                    <button class="btn-lupa" type="button" onclick="consultaLupa()"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
             </div>
             <div class="item ">
-                <a class="texto-menu" href="">Login</a>
+                <button type="button" class="btn-login" onclick="validaLogin()">Login</button>
             </div>
             <!--icone do font awesome-->
             <div class="item">
@@ -68,90 +77,134 @@
                 </div>
             </nav>
         </div>
+
         <!--fim itens menu-->
 
         <!--conteudo pricipal main-->
         <main>
-            <img class="slid-img" src="img/banner.png">
+            <img class="slid-img" src="img/banner2.png" alt="">
 
             <!--carrosel-->
             <div class="promocoes">
                 <p class="promocoes-titulo">Os mais pedidos</p>
 
                 <div id="carousel-destaque" class="carousel">
-
+                    
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/brinco_pedra.jpg" alt="">
+                            <img class="promocoes-img" src="img/brinco_pedra_branca.jpg" alt="">
                             <figcaption>
-                                <p>Brinco Pedra: R$ 79</p>
+                                <p>Brinco Pedra: R$ 79,00</p>
                                 <p></p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/colar_pedra.jpg" alt="">
+                            <img class="promocoes-img" src="img/brinco_pedra_sol2.jpg" alt="">
                             <figcaption>
-                                <p>Colar Pedra Roxa: R$ 290</p>
+                                <p>Brinco Pedra do Sol: R$ 79,00</p>
+                                <p></p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/pulseira_m.jpg" alt="">
+                            <img class="promocoes-img" src="img/colar_pedra_roxa.jpg" alt="">
                             <figcaption>
-                                <p>Pulseira: R$ 60</p>
+                                <p>Colar Pedra Roxa: R$ 190,00</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/aneis.jpg" alt="">
+                            <img class="promocoes-img" src="img/pulseira_marrom.jpg" alt="">
                             <figcaption>
-                                <p>Aneis pedras: R$ 39</p>
+                                <p>Pulseira: R$ 60,00</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/colar_pedra1.jpg" alt="">
+                            <img class="promocoes-img" src="img/aneis.jpg" at="">
                             <figcaption>
-                                <p>Colar Verde: 39</p>
+                                <p>Aneis pedras: R$ 39,90</p>
+                                <button  class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
-                    <hr>
+                    <div class="carousel__slide">
+                        <figure class="promocoes-figure">
+                            <img class="promocoes-img" src="img/colar_pedra_transparente.jpg" alt="">
+                            <figcaption>
+                                <p>Colar cristal: R$ 39,90</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
+                            </figcaption>
+                        </figure>
+                    </div>
 
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/colar_pedra2.jpg" alt="">
+                            <img class="promocoes-img" src="img/colar_azul.jpg" alt="">
                             <figcaption>
-                                <p>Colar Azul: 49</p>
+                                <p>Colar Azul: R$ 49,90</p>
+                                <button  class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
-                </div>
+
+                    <div class="carousel__slide">
+                        <figure class="promocoes-figure">
+                            <img class="promocoes-img" src="img/colar_pedra_preta.jpg" alt="">
+                            <figcaption>
+                                <p>Colar Preto: R$ 49,90</p>
+                                <button  class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="carousel__slide">
+                        <figure class="promocoes-figure">
+                            <img class="promocoes-img" src="img/colar_pedra_verde.jpg" alt="">
+                            <figcaption>
+                                <p>Colar Verde: R$ 49,90</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="carousel__slide">
+                        <figure class="promocoes-figure">
+                            <img class="promocoes-img" src="img/colar_pedra_marrom.jpg" alt="">
+                            <figcaption>
+                                <p>Colar de Cobre: R$ 49,90</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()">Comprar</button>
+                            </figcaption>
+                        </figure>
+                    </div>
             </div>
             <hr>
 
             <div class="promocoes">
                 <p class="promocoes-titulo">Colares</p>
-
                 <div id="carousel-colar" class="carousel">
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/colar10.jpg" alt="">
+                            <img class="promocoes-img" src="img/colar_pedra_marrom.jpg" alt="">
                             <figcaption>
-                                <p>Colar Pedra: R$79</p>
-                                <p></p>
+                                <p>Colar de Cobre: R$79</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
@@ -161,6 +214,7 @@
                             <img class="promocoes-img" src="img/colar11.jpg" alt="">
                             <figcaption>
                                 <p>Colar Pedra Roxa: R$290</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
@@ -170,15 +224,17 @@
                             <img class="promocoes-img" src="img/colar12.jpg" alt="">
                             <figcaption>
                                 <p>Colar pedra anbu: R$60</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/colar13.jpg" alt="">
+                            <img class="promocoes-img" src="img/colar_concha1.jpg" alt="">
                             <figcaption>
-                                <p>Aneis pedras: R$39</p>
+                                <p>Colar pedra: R$39</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
@@ -188,55 +244,53 @@
                             <img class="promocoes-img" src="img/colar14.jpg" alt="">
                             <figcaption>
                                 <p>Colares aranhado: R$39</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
-                </div>
             </div>
             <hr>
 
             <div class="promocoes">
                 <p class="promocoes-titulo">Brincos</p>
-
                 <div id="carousel-brincos" class="carousel">
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-
                             <img class="promocoes-img" src="img/brinco1.jpg" alt="">
                             <figcaption>
                                 <p>Colar Pedra: R$79</p>
-                                <p></p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/brinco2.jpg" alt="">
+                            <img class="promocoes-img" src="img/brunco_pedra_sol.jpg" alt="">
                             <figcaption>
                                 <p>Colar Pedra Roxa: R$290</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/brinco3.jpg" alt="">
+                            <img class="promocoes-img" src="img/brinco_pedra_branca.jpg" alt="">
                             <figcaption>
                                 <p>Colar pedra anbu: R$60</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
-
-                </div>
             </div>
+            
             <hr>
 
 
             <div class="promocoes">
                 <p class="promocoes-titulo">Pulseiras</p>
-
                 <div id="carousel-pulseiras" class="carousel">
 
                     <div class="carousel__slide">
@@ -244,25 +298,27 @@
                             <img class="promocoes-img" src="img/pulseira1jpg.jpg" alt="">
                             <figcaption>
                                 <p>Pulseira Gladiadora: R$49</p>
-                                <p></p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/pulseira2.jpg" alt="">
+                            <img class="promocoes-img" src="img/pulseira_verde.jpg" alt="">
                             <figcaption>
                                 <p>Pulseiras de cobre: R$90</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel__slide">
                         <figure class="promocoes-figure">
-                            <img class="promocoes-img" src="img/pulseira3.jpg" alt="">
+                            <img class="promocoes-img" src="img/pulseira_marrom.jpg" alt="">
                             <figcaption>
-                                <p>diversos trampos: R$?</p>
+                                <p>Pulseira: R$39,90</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
@@ -272,15 +328,13 @@
                             <img class="promocoes-img" src="img/pulseira_m.jpg" alt="">
                             <figcaption>
                                 <p>pulseira olho de gato: R$30</p>
+                                <button class="btn-comprar" type="button" onclick="addProduto()" >Comprar</button>
                             </figcaption>
                         </figure>
                     </div>
 
                 </div>
             </div>
-            <hr>
-
-
         </main>
     </div>
     <!--fim do container interno-->
@@ -292,7 +346,7 @@
             </a>
 
             <a class="rodape-texto" href="">
-                Atendimento</p>
+                <p>Privacidade e Segurança</p>
             </a>
         </div>
 
@@ -314,23 +368,28 @@
 
         <div class="rodape-item">
             <P class="rodape-titulo">ATENDIMENTO</p>
-
-
             <a class="rodape-texto" href="">
-                <p>Whatsapp: (19)99985-8617</p>
+                <p>Seg a Sex 9:00 á 19:00</p>
+            </a>
+            <a href="https://wa.me/5519999858617">
+                <img class="social" src="img/WhatsApp-icone.png" alt="">
             </a>
         </div>
 
         <div class="rodape-item">
             <P class="rodape-titulo">SIGA NOSSAS REDES SOCIAIS</p>
-
-            <a class="rodape-texto" href="">
-                <p>Facebook: Abissinia Artes</p>
+            <a href="https://instagram.com/abissinia_artes/" target="_blank">
+                <img class="social" src="img/instagram.webp" alt="">
             </a>
 
-            <a class="rodape-texto" href="">
-                <p>Instagram:@Abissiniaartes</p>
+            <a href="https://www.facebook.com/profile.php?id=100063766554825" target="_blank">
+                <img class="social" src="img/Facebook.png" alt="">
             </a>
+        </div>
+
+        
+        <hr>
+
 
         </div>
     </footer>
@@ -339,7 +398,7 @@
     </div>
     <!--Importação do Fancy-->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="https://kit.fontawesome.com/de12576d65.js" crossorigin="anonymous"></script>
+    <script src="https:kit.fontwesome.com/d1a9a58100.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
