@@ -18,14 +18,11 @@ body{
 
 .header{
     width: 100%;
+    padding: 20px;
     background: #a633c9;
-    display: grid;
-    padding: 10px;
-    /*1fr fração e colunas iguais*/
-    grid-template-columns: 1fr 2fr 1fr 1fr;
+    display: flex;
+    gap: 10px;
     align-items: center;
-    position: relative;
-    justify-content: space-between;
 }
 
 .slid-img{
@@ -45,10 +42,10 @@ body{
 }
 
 .input-lupa{
-    width: 100%;
+    width: 70%;
     border: #f8f8f8;
     background-color: #FFF;
-    border-radius: 8px 0px 0px 4px !important;
+    border-radius: 4px 0px 0px 4px !important;
     border-right: 0 !important;
 }
 
@@ -66,22 +63,23 @@ body{
 }
 
 .imagem{
-    width: 60%;
+    width: 40%;
 }
 
 .pesquisar{
-    width: 90%;
-    padding: 6px 10px;
+    width: 100%;
+    padding: 10px;
     margin-top: 0px;
-
-
+    margin-right: 70px;
 }
 
 .texto-menu{
     color: rgb(255, 255, 255);
     text-decoration: none;
-    margin-top: 0;
-   
+    padding: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 5px;
 }
 
 
@@ -164,23 +162,15 @@ body{
 }
 
 .btn-login{
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 4px;
-    color: #0c0c0c;
-    background-color: #fff;
-    border: #fff;
-    border-radius: 5px;
+    width: 50px;
+    color: #FFF;
     cursor: pointer;
-    padding: 4px 16px; 
-    align-items: center;
+    padding: 10px;
 }
-
-
 
 .btn-login:hover{
-    background-color: #ecf0ec;
+    background-color: #f7f8f7;
 }
-
 
 .rodape{
     background-color: #ce82e9;

@@ -1,12 +1,12 @@
 <?php
 
-include_once "include/conexao.php";
+include_once "backend/include/conexao.php";
 
 try{
     $email = $_POST['email'];
     $senha = sha1($_POST['senha']);
 
-    $sql = "SELECT email FROM tb_usuarios WHERE email='$email' AND BINARY senha = '$senha' AND ativo = 1";
+    $sql = "SELECT email FROM tb_usuarios WHERE email ='$email' AND BINARY senha = '$senha' AND ativo = 1";
 
     $comando = $con->prepare($sql);
 

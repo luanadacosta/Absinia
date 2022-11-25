@@ -1,0 +1,48 @@
+body{
+    background-color: #bd5cdb;
+}
+
+form{
+    margin-top: 10px;
+    padding: 70px;
+    text-align: center;
+}
+h2{
+
+    text-align: center;
+    padding: 10px;
+    margin-left: 60px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.email{
+    color: #fff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-login{
+    border-radius: 4px;
+    border-color: #bd5cdb;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.senha{
+    color: #fff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-cadastrar{
+    padding: 4px 20px;
+    margin-top: 10px;
+    margin-left: 60px;
+    background-color: #fff;
+    color: black;
+    border-radius: 4px;
+    border-color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

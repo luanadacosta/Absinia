@@ -1,8 +1,3 @@
-<?php
-    include('includes/carrinho.php');
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,9 +8,7 @@
     <title>Absinia Artes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <!--link font awesome para funcionais icones do font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,11 +29,12 @@
                 </div>
             </div>
             <div class="item ">
-                <a class="btn-login" type="button" onclick="validaLogin()">Login</a>
+                <a class="btn-login" type="button" onclick="validaLogin()"><i class="fa-solid fa-user"></i></a>
             </div>
+            
             <!--icone do font awesome-->
             <div class="item">
-                <a class="texto-menu" href="">Seu Carrinho<i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+                <a class="btn-login" type="button" onclick="validaLogin()"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </header>
         <!--fim topo-->
@@ -395,6 +389,7 @@
     </div>
     <!--Importação do Fancy-->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://kit.fontawesome.com/de12576d65.js" crossorigin="anonymous"></script>
     <!-- <script src="https:kit.fontwesome.com/d1a9a58100.js" crossorigin="anonymous"></script> -->
     <script src="js/script.js"></script>
 </body>
