@@ -13,13 +13,9 @@
 
     $comando->execute();
 
-    $id_usuario = $con->lastInsertId();
-
     $comando = $con->prepare($sql);
     $comando->execute();
   
-
-    //cria um array para ser convertido em JSON 
     $retorno = array("retorno"=>"ok","mensagem"=>"Usuario logado com sucesso!");
 
 

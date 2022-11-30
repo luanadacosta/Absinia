@@ -168,10 +168,6 @@ body{
     padding: 10px;
 }
 
-.btn-login:hover{
-    background-color: #f7f8f7;
-}
-
 .rodape{
     background-color: #ce82e9;
     display: grid;

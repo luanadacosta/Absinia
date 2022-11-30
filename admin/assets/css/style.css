@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #c354e5
+}
+
+form{
+    text-align: center;
+    color: #fff;
+    
+    grid-template-columns: repeat(2,1fr);
+    gap: 4px;
+    display: grid;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+}
+
+.input-login{
+  
+    padding: 8px 12px;
+    border-radius: 4px ;
+    border: none;
+    width: 33%;
+    margin-top: 5px;
+    border-radius: 3px;
+   
+}
+
+.btn-cadastrar{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.cd{
+    font-family: Arial, Helvetica, sans-serif ;
+}
