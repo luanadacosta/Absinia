@@ -1,10 +1,11 @@
 <?php
 
-include_once "backend/include/conexao.php";
+include_once "include/conexao.php";
 
 try{
     $email = $_POST['email'];
     $senha = sha1($_POST['senha']);
+  
 
     $sql = "SELECT email FROM tb_usuarios WHERE email ='$email' AND BINARY senha = '$senha' AND ativo = 1";
 
@@ -30,5 +31,3 @@ try{
 
 $json = json_encode($retorno,JSON_UNESCAPED_UNICODE);
 echo $json;
-
-?>
