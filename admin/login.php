@@ -12,7 +12,7 @@
 
 <body>
 
-    <div class="corpo">
+    <div class="corpo1">
         <div class="container">
             <h2>Entrar</h2>
 

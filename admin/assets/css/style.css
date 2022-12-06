@@ -5,10 +5,13 @@
 
 #container{
     width: 100%;
-    
+    justify-content: center;
+    align-content: center;
 }
 
 body{
+    margin: 0;
+    padding: 0;
     background-color: #c354e5
 }
 
@@ -46,7 +49,6 @@ h5{
 }
 
 #form-cadastrar{
-
     margin-top: 50px;
     grid-template-columns: repeat(2,1fr);
     display: grid;

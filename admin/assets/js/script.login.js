@@ -1,14 +1,9 @@
-$(document).ready(function () {
-    $('#telefone').inputmask('(99)99999-9999')
 
+const validaLogin = () => {
 
-});
+    let dados = new FormData($('#form-login')[0])
 
-const addUsuarios = () => {
-
-    let dados = new FormData($('#form-cadastrar')[0])
-
-    const result = fetch('../backend/addUsuarios.php', {
+    const result = fetch('../backend/validaLogin.php', {
         method: 'POST',
         body: dados
     })
@@ -22,7 +17,7 @@ const addUsuarios = () => {
                 text: result.mensagem,
             });
 
-            result.retorno == 'ok' ? $('#form-cadastrar')[0].reset() : ''
+            result.retorno == 'ok' ? $('#form-login')[0].reset() : ''
         })
 }
 
