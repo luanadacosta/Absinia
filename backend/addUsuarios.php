@@ -6,8 +6,9 @@
  
     $email = $_POST['email']; 
     $telefone = str_replace($limpa,'',$_POST['telefone']);
-    $confirmar = $_POST['confirmar']; 
     $senha = sha1($senha);
+    $confirmar = $_POST['confirmar']; 
+
 
     //ATENÇAO
     //necessario implementar validacao de campos vazios

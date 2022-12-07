@@ -175,11 +175,23 @@ body{
 }
 
 .social{
-    width: 10%;
+    width: 50px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 1px;
+    grid;
+}
+
+.whats{
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
     margin: 1px;
 }
 
-.rodape-item{
+
+.rodape-social{
     color: #ffffff;
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -34,7 +34,7 @@
 
                 <div class="cds">
                     <h5>Não tem cadastro?</h5>
-                    <button class="btn-criar" type="button" onclick="validaCadastro()">Criar conta</button>
+                    <button class="btn-criar" type="button" onclick="cadastrar()">Criar conta</button>
                 </div>
             </form>
         </div>

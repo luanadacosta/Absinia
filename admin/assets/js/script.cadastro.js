@@ -1,14 +1,12 @@
 $(document).ready(function () {
     $('#telefone').inputmask('(99)99999-9999')
-
-
 });
 
 const addUsuarios = () => {
 
     let dados = new FormData($('#form-cadastrar')[0])
 
-    const result = fetch('../backend/addUsuarios.php', {
+    const result = fetch('/admin/backend/addUsuarios.php', {
         method: 'POST',
         body: dados
     })
