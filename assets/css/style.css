@@ -179,7 +179,7 @@ body{
     color: #FFF;
     cursor: pointer;
     margin: 1px;
-    grid;
+    display: inline;
 }
 
 .whats{

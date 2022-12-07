@@ -45,15 +45,16 @@ h5{
     margin-top: 7px;
     border-radius: 3px;
     border: none;
-   
 }
 
-#form-cadastrar{
-    margin-top: 50px;
-    grid-template-columns: repeat(2,1fr);
-    display: grid;
-    gap: 10px;
+.input-cadastro{
+    width: 30%;
+    padding: 5px ;
+    margin-top: 7px;
+    border-radius: 3px;
+    border: none;
 }
+
 
 .input-cadastro{
     width: 40%;
@@ -76,15 +77,13 @@ h5{
 }
 
 .cd{
-    
     font-family: Arial, Helvetica, sans-serif ;
 }
 
 .btn-cadastrar{
-    margin-left: 96%;
-    margin-top: 30px;
+    text-align: center;
     background-color: #fff;
-    color: rgb(89, 169, 43);
+    color: rgb(30, 140, 8);
     border-radius: 6px;
     border: none;
     width: 10%;

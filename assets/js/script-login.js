@@ -3,7 +3,7 @@ const validaLogin = () =>{
      let dados = new FormData($('#form-login')[0])
  
      //envio o recebimento de dados
-     const result = fetch('backend/validaLogin.php', {
+     const result = fetch('/backend/validaLogin.php', {
          method: 'POST',
          body: dados
      })

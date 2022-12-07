@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="center">
-                    <button class="btn-cadastrar" type="button">Cadastrar</button>
+                    <button class="btn-cadastrar" type="button" onclick="addUsuarios()">Cadastrar</button>
                 </div>
             </form>
 
