@@ -1,30 +1,53 @@
-const validaLogin = () =>{
-    //captura todo o formulario e cria um formData
-     let dados = new FormData($('#form-login')[0])
- 
-     //envio o recebimento de dados
-     const result = fetch('/backend/validaLogin.php', {
-         method: 'POST',
-         body: dados
-     })
-         .then((response) => response.json())
-         .then((result) => {
-             //si for errado senha ou email retorno é erro então aparece a msg
-             if(result.retorno == 'erro'){
-                 Swal.fire({
-                     icon: 'error',
-                     title: 'Atenção',
-                     text: result.mensagem
-                   })
-             }else{
-                 window.location = 'admin/'
-             }
-         //aqui é tratado o retorno ao front 
-         
-     })
- };
-         
- 
-         
-     
- 
+const validarLogin = ()=>{
+    let email = $('#email').val()
+    let senha = $('#senha').val()
+
+    if(email == ''){
+        Swall.fire({
+            "icon":"error",
+            "title":"Atenção",
+            "text":"Preencha o campo email"
+        })
+        return
+    }
+    if(senha == ''){
+        Swall.fire({
+            "icon":"error",
+            "title":"Atenção",
+            "text":"Preencha o campo senha"
+        })
+    }
+
+}
+
+const result = fetch('/valida/login',{
+    method:'POST',
+    body: `email=${email}&senha=${senha}`,
+    headers: {
+        'content-type': 'application/x-www-form-urlencoded'
+    }
+}).then((response)=>response.json())
+.then((result)=>{
+    if(result.retorno == 'ok'){
+        Swal.fire({
+            'icon': 'success',
+            "title": 'sucesso!',
+            "text": result.mensagem
+        })
+
+        // limpa o formulario
+        $('#form-login')[0].reset()
+
+    }else{
+        Swal.fire({
+            'icon': 'error',
+            "title": 'atenção',
+            "text": result.mensagem
+        })
+        
+    }
+})
+
+
+
+

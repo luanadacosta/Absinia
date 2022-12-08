@@ -102,3 +102,8 @@ h5{
     cursor: pointer;
 }
 
+.link-index{
+    text-decoration: none;
+    color: #FFF;
+}
+
