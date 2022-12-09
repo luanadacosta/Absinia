@@ -1,26 +1,42 @@
-$(document).ready(function () {
-    $('#telefone').inputmask('(99)99999-9999')
-});
+// funcao que cadastra login
 
-const addUsuarios = () => {
-
-    let dados = new FormData($('#form-cadastrar')[0])
-
-    const result = fetch('/admin/backend/addUsuarios.php', {
-        method: 'POST',
-        body: dados
-    })
-        .then((response) => response.json())
-        .then((result) => {
-            //aqui tratamos o retorno do backend
-
+const cadastrarLogin = () =>{
+    // captura dados do form
+    
+    let email = $('#email').val()
+    let telefone = $('#telefone').val()
+    let senha = $('#senha').val()
+    let confirmar = $('#confirmar').val()
+ 
+    const result = fetch('/cadastrar/login',{
+        method:'POST',
+        body: `telefone=${telefone}&email=${email}&senha=${senha}&confirmar=${confirmar}`,
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded'
+        }
+    }).then((response)=>response.json())
+    .then((result)=>{
+        if(result.retorno == 'ok'){
             Swal.fire({
-                icon: result.retorno == 'ok' ? 'success' : 'error',
-                title: result.retorno == 'ok' ? 'Sucesso!' : 'Atenção',
-                text: result.mensagem,
-            });
+                'icon': 'success',
+                "title": 'sucesso!',
+                "text": result.mensagem
+            })
 
-            result.retorno == 'ok' ? $('#form-cadastrar')[0].reset() : ''
-        })
+            // limpa o formulario
+            $('#form-login')[0].reset()
+
+        }else{
+            Swal.fire({
+                'icon': 'error',
+                "title": 'atenção',
+                "text": result.mensagem
+            })
+
+        }
+    })
+
+
+
+
 }
-
