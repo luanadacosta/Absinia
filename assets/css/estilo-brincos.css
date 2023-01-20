@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400;1,500;1,600&family=Roboto:wght@700&display=swap');
+
+*{
+    font-family:'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.promocoes{
+    margin-top: 40px;
+   
+}
+
+#grid-produto{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid-produto-item{
+    width: 100%;
+}
