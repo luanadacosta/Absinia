@@ -15,6 +15,7 @@ body{
     margin: 0 auto;   
 }
 
+
 .header{
     width: 100%;
     padding: 20px;
@@ -23,6 +24,7 @@ body{
     gap: 10px;
     align-items: center;
 }
+
 
 .slid-img{
     width: 100%;
@@ -199,7 +201,7 @@ body{
 }
 
 .rodape-titulo{
-color: rgb(64, 6, 97);
+    color: rgb(64, 6, 97);
 
 }
 

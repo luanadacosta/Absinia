@@ -1,39 +1,39 @@
+//add evento de onclick no elemento
+document.querySelector('#btn-cadastrar').addEventListener('click', ()=>{
+    
+    //prevençao de envio padrao
+    window.event.preventDefault()
 
-// funcao que cadastra login
-const cadastrarLogin = () =>{
-    // captura dados do form
-    let telefone = $('#telefone').val()
-    let email = $('#email').val()
-    let senha = $('#senha').val()
-    let confirmar = $('#confirmar').val()
- 
-    const result = fetch('/cadastrar/login',{
-        method:'POST',
-        body: `telefone=${telefone}&email=${email}&senha=${senha}&confirmar=${confirmar}`,
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded'
-        }
-    }).then((response)=>response.json())
-    .then((result)=>{
-        if(result.retorno == 'ok'){
-            Swal.fire({
-                'icon': 'success',
-                "title": 'sucesso!',
-                "text": result.mensagem
-            })
+    let nome = document.getElementById('nome').value
 
-            // limpa o formulario
-            $('#form-login')[0].reset()
+    let email = document.getElementById('email').value
 
-        }else{
-            Swal.fire({
-                'icon': 'error',
-                "title": 'atenção',
-                "text": result.mensagem
-            })
-            
+    let senha = document.getElementById('senha').value
+
+    let confirmar = document.getElementById('confirmar').value
+
+    const result = fetch('/cadastrar/usuarios',{
+        method: "POST",
+        body: `nome=${nome}&email=${email}&senha=${senha}`,
+        headers:{'Content-type':'application/x-www-form-urlencoded'
         }
     })
-
-}
-
+    .then(response=>response.json())
+    .then(result=>{
+        if(result.retorno == 'ok'){
+        Swal.fire({
+            icon: "success",
+            title: "sucesso",
+            text: result.mensagem
+    })
+    //resetar formulario
+    document.getElementById('form-usuarios').reset()
+    }else{
+        Swal.fire({
+            icon: "error",
+            title: "atenção",
+            text: result.mensagem
+        })
+        }
+    })
+})

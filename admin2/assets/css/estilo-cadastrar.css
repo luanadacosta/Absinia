@@ -39,7 +39,9 @@ h5{
     color: #fff;
 }
 
-.input-login{
+
+
+.input-cadastro{
     width: 30%;
     padding: 5px ;
     margin-top: 7px;
@@ -47,34 +49,6 @@ h5{
     border: none;
 }
 
-.input-cadastro{
-    width: 30%;
-    padding: 5px ;
-    margin-top: 7px;
-    border-radius: 3px;
-    border: none;
-}
-
-
-.input-cadastro{
-    width: 40%;
-    padding: 5px ;
-    margin-top: 10px;
-    border-radius: 3px;
-    border: none;
-   
-}
-
-.btn-login{
-    margin-top: 30px;
-    background-color: #fff;
-    color: rgb(130, 6, 164);
-    border-radius: 6px;
-    border: none;
-    width: 10%;
-    height: 27px;
-    cursor: pointer;
-}
 
 .cd{
     margin-top: 50px;
@@ -108,8 +82,5 @@ h5{
     cursor: pointer;
 }
 
-.link-index{
-    text-decoration: none;
-    color: #FFF;
-}
+
 

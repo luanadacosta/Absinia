@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
-    <link rel="stylesheet" href="../admin/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/admin2/assets/css/estilo-cadastrar.css">
 </head>
 
 <body class="corpo">
@@ -15,34 +16,35 @@
             <h2>Cadastrar</h2>
 
             <form  id="form-cadastrar" action="" method="POST">
-                <div>
-                    <label class="cd" for="email">Email</label>
-                    <input type="email" class="input-cadastro" name="email" id="email">
+                <div class="cd">
+                    <label class="" for="nome">Nome</label>
+                    <input type="text" class="input-cadastro" name="nome" id="nome">
                 </div>
 
-                <div>
-                    <label class="cd" for="telefone">Telefone</label>
-                    <input type="telefone" class="input-cadastro" name="telefone" id="telefone">
+                <div class="cd">
+                    <label class="" for="email">Email</label>
+                    <input type="text" class="input-cadastro" name="email" id="email">
                 </div>
 
-                <div>
-                    <label class="cd" for="senha">Senha</label>
+                <div class="cd">
+                    <label class="" for="senha">Senha</label>
                     <input type="password" class="input-cadastro" name="senha" id="senha">
                 </div>
 
-                <div>
-                    <label class="cd" for="confirmar">Confirmar Senha</label>
-                    <input type="confirmar" class="input-cadastro" name="confirmar" id="confirmar">
+                <div class="cd">
+                    <label class="" for="confirmar">Confirmar Senha</label>
+                    <input type="password" class="input-cadastro" name="confirmar" id="confirmar">
                 </div>
 
-               
-            </form>
-                
-                    <button class="btn-cadastrar" type="button" onclick="addUsuarios()">Cadastrar</button>
-                
-
+                <div class="center">
+                    <button class="btn-cadastrar" type="button" onclick="cadastroUsuario()">Cadastrar</button>
+                </div>    
+                </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script-cadastrar.js"></script>
 </body>
 
 </html>

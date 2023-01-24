@@ -5,13 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../admin/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/de12576d65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/admin2/assets/css/estilo-login.css">
 </head>
 
 <body>
 
     <div class="corpo1">
         <div class="container">
+            <header class="header">
+                    <img class="imagem" src="/assets/img/logo3.png" alt="">
+
+                    <div class="texto-header">
+                        <p>Site seguro</p>
+                        <img class="lock" src="assets/img/cadeado.png" alt="">  
+                    </h4>
+                </div>
+            </header>
+
             <h2>Entrar</h2>
 
             <form action="" method="POST" id="form-login">
@@ -25,10 +36,11 @@
                     <input type="password" class="input-login" name="senha" id="senha">
                 </div>
 
-                <div class="center">
+                <div>
                     <button class="btn-login" onclick="validarLogin()" type="button">Login</button>
                 </div>
                 <br>
+
 
                 <a class="link-index" href="cadastrar.html">
                     <small>Cadastrar Login</small>
@@ -37,8 +49,10 @@
         </div>
     </div>
 
+    
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/sweetalert2@11.js"></script>
+    
     <script src="js/login.js"></script>
 </body>
 
