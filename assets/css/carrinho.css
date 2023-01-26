@@ -1,18 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400;1,500;1,600&family=Roboto:wght@700&display=swap');
+
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
     box-sizing: border-box;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
 
+#container{
+    width: 100%;
+    margin: 0 auto;   
+}
+
+#container-interno{
+    vertical-align: top;
+}
 
 .header{
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     background: #a633c9;
     display: flex;
+    gap: 12px;
     align-items: center;
 }
 
+
 .imagem{
     width: 30%;
+}
+
+
+.navbar{
+    width: 100%;
+    display: grid;
+    /*repeat= repete varias vezes a mesma medida, 7colunas com a mesma medida*/
+    grid-template-columns: repeat(5,auto);
+    padding: 12px;
+}
+.texto-navbar{
+    color: #101010;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 12px;
+    
+   
+    
 }

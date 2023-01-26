@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-right: 5px;
+}
+
+#sobre-nos{
+    text-align: center;
+}
