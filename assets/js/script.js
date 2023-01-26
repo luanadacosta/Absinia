@@ -1,5 +1,3 @@
-
-
 /*carrocel das imagens(rolagem) */
 const carouselDestaque = new Carousel(document.querySelector("#carousel-destaque"), {
   // Your options go here
