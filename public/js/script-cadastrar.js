@@ -1,20 +1,18 @@
 //add evento de onclick no elemento
-document.querySelector('#btn-cadastrar').addEventListener('click', ()=>{
-    
+
     //prevençao de envio padrao
     window.event.preventDefault()
 
-    let nome = document.getElementById('nome').value
-
+   
     let email = document.getElementById('email').value
 
     let senha = document.getElementById('senha').value
 
     let confirmar = document.getElementById('confirmar').value
 
-    const result = fetch('/cadastrar/usuarios',{
+    const result = fetch('/cadastrar.html',{
         method: "POST",
-        body: `nome=${nome}&email=${email}&senha=${senha}`,
+        body: `&email=${email}&senha=${senha}`,
         headers:{'Content-type':'application/x-www-form-urlencoded'
         }
     })
@@ -36,4 +34,4 @@ document.querySelector('#btn-cadastrar').addEventListener('click', ()=>{
         })
         }
     })
-})
+
