@@ -3,14 +3,15 @@
     //prevençao de envio padrao
     window.event.preventDefault()
 
-   
+    let nome = document.getElementById('nome').value
+
     let email = document.getElementById('email').value
 
     let senha = document.getElementById('senha').value
 
     let confirmar = document.getElementById('confirmar').value
 
-    const result = fetch('/cadastrar.html',{
+    const result = fetch('backend/cadastrar-login.php',{
         method: "POST",
         body: `&email=${email}&senha=${senha}`,
         headers:{'Content-type':'application/x-www-form-urlencoded'

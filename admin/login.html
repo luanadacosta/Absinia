@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="https://kit.fontawesome.com/de12576d65.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/css/estilo-login.css">
+    <link rel="stylesheet" href="../public/css/estilo-login.css">
 </head>
 
 <body>
     <div class="corpo">
         <header class="header">
             <div class="item">
-                <img class="imagem" src="/public/img/logo3.png" alt="">
+                <img class="imagem" src="../public/img/logo3.png" alt="">
             
                 <h6 class="texto-header">Site seguro</h6>
             </div>
@@ -24,8 +24,8 @@
 
             <form  id="form-cadastrar" action="" method="POST">
                 <div class="cd">
-                    <label class="" for="nome">Nome</label>
-                    <input type="text" class="input-login" name="nome" id="nome">
+                    <label class="" for="email">Email</label>
+                    <input type="text" class="input-login" name="email" id="email">
                 </div>
 
                 <div class="cd">
@@ -35,7 +35,7 @@
 
                 
                 <div class="center">
-                    <button class="btn-login btn-success" type="button">Login</button>
+                    <button class="btn-login btn-success" type="button" onclick="validaLogin()">Login</button>
                 </div> 
                 
                 <p>Não possui cadastro?</p>
@@ -48,7 +48,7 @@
     
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/sweetalert2@11.js"></script>
-    <script src="/public/js/login.js"></script>
+    <script src="public/js/login.js"></script>
 </body>
 
 </html>
