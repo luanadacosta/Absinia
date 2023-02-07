@@ -5,33 +5,32 @@ include'conexao.php';
 
 try{
     
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    $confirmar = $_POST['confirmar'];
+    $produto = $_POST['produto'];
+    $categoria = $_POST['categoria'];
+    $valor = $_POST['valor'];
+    $imagem = $_POST['imagem'];
 
 
     $sql = "INSERT INTO 
-    tb_cadastrar
+    tb_produto
     (
-    `nome`,
-    `email`,
-    `senha`,
-    `confirmar`
+    `produto`,
+    `categoria`,
+    `valor`,
+    `imagem`
     ) 
     VALUES 
     (
-    '$nome','$email','$senha','$confirmar'
+    '$produto','$categoria','$valor','$imagem'
     )
     ";
 
  
 $comando = $con->prepare($sql);
 
-
 $comando->execute();
 
-$retorno = array("retorno"=>"ok","mensagem"=>"cadastro realizado com sucesso!");
+$retorno = array("retorno"=>"ok","mensagem"=>"produto realizado com sucesso!");
 
 $json = json_encode($retorno,JSON_UNESCAPED_UNICODE);
 

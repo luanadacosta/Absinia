@@ -1,4 +1,6 @@
 //add evento de onclick no elemento
+const addUsuarios = () =>{
+
 
     //prevençao de envio padrao
     window.event.preventDefault()
@@ -11,9 +13,9 @@
 
     let confirmar = document.getElementById('confirmar').value
 
-    const result = fetch('backend/cadastrar-login.php',{
+    const result = fetch('../backend/cadastrar-login.php',{
         method: "POST",
-        body: `&email=${email}&senha=${senha}`,
+        body: `nome=${nome}&email=${email}&senha=${senha}&confirmar=${confirmar}`,
         headers:{'Content-type':'application/x-www-form-urlencoded'
         }
     })
@@ -36,3 +38,4 @@
         }
     })
 
+}

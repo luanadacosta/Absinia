@@ -42,15 +42,18 @@ body{
 }
 
 .btn-login{
-    margin-top: 20px;
-    align-items: center;
+    margin-top: 30px;
     background-color: #fff;
     color: rgb(130, 6, 164);
-    border-radius: 12px;
+    border-radius: 10px;
     border: none;
-    width: 10%;
+    width: 7%;
     height: 27px;
     cursor: pointer;
+}
+
+.center{
+    text-align: center;
 }
 
 .cd{
@@ -80,6 +83,14 @@ h5{
     color: #fff;
 }
 
+p{
+    text-align: center;
+    color: #FFF;
+    margin-top: 40px;
+}
+
+
+
 .texto-header{
     align-items: flex-start;
 }
@@ -105,14 +116,4 @@ h5{
 
 
 
-.link-index{
-    margin-top: none;
-    margin-left: 578px;
-    border-radius: 12px;
-    width: 10%;
-    height: 23px;
-    text-decoration: none;
-    background-color: #FFF;
-    color: rgb(138, 37, 181);
-}
 
