@@ -10,17 +10,215 @@ body{
     margin: 0;
 }
 
+#container{
+    width: 100%;
+    margin: 0 auto;   
+}
 
-.promocoes{
-    margin-top: 40px;
+
+.header{
+    width: 100%;
+    padding: 20px;
+    background: #a633c9;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.slid-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.item{
+    color: rgb(9, 126, 34);
    
 }
 
-#grid-produto{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.div-lupa{
+    display: flex;
 }
 
-.grid-produto-item{
-    width: 100%;
+.input-lupa{
+    width: 70%;
+    border: #f8f8f8;
+    background-color: #FFF;
+    border-radius: 4px 0px 0px 4px !important;
+    border-right: 0 !important;
 }
+
+.btn-lupa{
+    padding: 6px 7px;
+    background-color: #FFF;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 0px 4px 4px 0px;
+}
+  
+.btn-lupa:hover{
+    background: rgb(243, 237, 237);
+
+}
+
+.imagem{
+    width: 40%;
+}
+
+.pesquisar{
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    margin-right: 70px;
+}
+
+.texto-menu{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 5px;
+}
+
+
+.navbar{
+    width: 100%;
+    display: grid;
+    /*repeat= repete varias vezes a mesma medida, 7colunas com a mesma medida*/
+    grid-template-columns: repeat(6,auto);
+    padding: 12px;
+}
+
+
+.texto-navbar{
+    color: #f8f8f8;
+    text-decoration: none;
+    display: flex;
+    background-color: #19962c;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5px;
+    padding: 12px;
+    transition: linear;
+   
+    
+}
+.texto-navbar:hover{
+    background-color: #21a81a;
+}
+
+.texto-pricipal{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 27px;
+    /*identifica to box heigth*/
+    text-align: center;
+    margin: 40 0px;
+    color: #21a81a;
+}
+
+.promocoes-titulo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 41px;
+    /* identical to box height */
+    color: #44071e;
+    text-align: center;
+}
+
+.promocoes-img{
+    width: 100%;
+    padding: 0px;
+}
+
+.promocoes{
+    margin-top: 40px;
+    
+}
+
+/*altera o tamanho padrao de cada item do corosel*/
+
+.carousel__slide{
+    width: 30%;
+    padding: 0;
+    display: flex;
+}
+
+.btn-comprar{
+    padding: 6px;
+    color: #ffffff;
+    background-color: #19962c;
+    border: #0d5e19;
+    border-radius: 10px;
+}
+
+.btn-comprar:hover{
+    background-color: #21a81a;
+}
+
+.btn-login{
+    width: 50px;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.rodape{
+    background-color: #ce82e9;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.social{
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 1px;
+    display: inline;
+}
+
+.whats{
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin: 1px;
+}
+
+
+.rodape-social{
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.rodape-titulo{
+    color: rgb(64, 6, 97);
+
+}
+
+.rodape-texto{
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+}
+
+.banner-img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/*final da versao desktop*/
+
+
